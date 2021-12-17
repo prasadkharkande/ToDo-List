@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="aboutUs.html"><li>About</li></a>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="container">
+        <div id="child">
+            <h1>My To-do List</h1>
+            <i id="task-completed">Double click the item to mark it as completed.</i>
+            <input type="text" id="task" placeholder="Task to be done">
+            <button type="submit" id="task-add-button">Add</button>
+            <p>
+                <table id="to-do-list">
+                    <td>abc</td>
+                    <td>Pqr</td>
+                    <td>hbn</td>
+                    <td>jlk</td>
+                    <td>yiu</td>
+                </table>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>Developed by Prasad Kharkande</p>
+    </footer>
+
+    <script>
+        var newtask = document.getElementById("task-add-button").addEventListener("click", getTaskInfo);
+        function getTaskInfo(){
+            var newAssignedtask = document.getElementById("task").value;
+            console.log(newAssignedtask);
+            document.getElementById("task").value=" ";
+            alert("Task :"+newAssignedtask+ "added Successfully!");
+        }
+
+        document.getElementById(td).addEventListener("dblclick",completedtask);
+        function completedTask(){
+            document.getElementById("td").style="text-decoration: line-through";
+        }
+    </script>
+</body>
+</html>

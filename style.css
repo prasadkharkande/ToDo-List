@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(62, 224, 62);
+    font-size: 120%;
+}
+
+nav{
+    background-color: rgb(32, 32, 32);
+    font-size: 110%;
+    color: white;
+    padding: 8px;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    padding: 30px;
+}
+
+a {
+    text-decoration-line: none;
+    color: blanchedalmond;
+}
+
+.container {
+
+    background-color: transparent;
+    border-radius: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+#child {
+    background-color: white;
+    border-radius: 5%;
+    font-size: 120%;
+    align-content: center;
+    margin: 30px;
+    padding: 40px;
+    height: 400px;
+    width: 400px;
+}
+
+#task-completed {
+    font-size: 80%;
+    display: inline-block;
+
+}
+
+#task-add-button {
+    border-radius: 10%;
+    padding: 5px 15px 5px 15px;
+    background-color:yellowgreen ;
+    text-decoration-color: black;
+    font-weight: bold;
+    margin: 10px;
+}
+
+input {
+    padding: 5px 15px 5px 15px;
+}
+
+table td{
+    display: block;
+}    
